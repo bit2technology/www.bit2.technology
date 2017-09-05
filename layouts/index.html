@@ -1,0 +1,9 @@
+{{ partial "header" . }}
+<h1>Hello World!</h1>
+<img alt="Hello" id="helloimg"/>
+<script>
+  var gifs = ["https://media.giphy.com/media/xNT2CcLjhbI0U/giphy.gif",
+              "https://media.giphy.com/media/fdcibA8CVjFFS/giphy.gif"];
+  document.getElementById("helloimg").src = gifs[Math.floor(Math.random() * gifs.length)];
+</script>
+{{ partial "footer" . }}

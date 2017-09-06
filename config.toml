@@ -1,2 +1,3 @@
 baseURL = "https://www.bit2.technology/"
+enableRobotsTXT = true
 title = "Bit2 Technology"

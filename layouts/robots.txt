@@ -1,6 +1,0 @@
-{{ if eq (getenv "CONTEXT") "production" }}
-Sitemap: /sitemap.xml
-{{ else }}
-User-agent: *
-Disallow: /
-{{ end }}

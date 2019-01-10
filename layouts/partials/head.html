@@ -2,5 +2,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="alternate" type="application/rss+xml" href="{{ .RSSLink }}">
+  <link rel="canonical" href="{{ .Permalink }}">
   <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
 </head>

@@ -1,5 +1,5 @@
 [build]
-  command = "hugo version && hugo --minify --verbose"
+  command = "hugo version && hugo --minify --verbose --baseURL $DEPLOY_PRIME_URL"
   publish = "public"
 
   [build.environment]

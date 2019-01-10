@@ -1,4 +1,5 @@
-baseURL = "/"
+canonifyurls = true
+cleandestinationdir = true
 defaultContentLanguage = "en-us"
 enableRobotsTXT = true
 title = "Bit2 Technology"

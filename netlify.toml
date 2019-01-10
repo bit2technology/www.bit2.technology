@@ -1,5 +1,5 @@
 [build]
-  command = "hugo version && hugo -v"
+  command = "hugo version && hugo --minify --verbose"
   publish = "public"
 
 [build.environment]

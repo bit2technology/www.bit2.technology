@@ -1,18 +1,31 @@
 :root {
   --background-color: #eee;
-  --header-background-color: #bbb7;
+  --header-background-color: #bbb;
   --link-color: #44f;
   --link-color-hover: #bbf;
   --text-color: #111;
 }
 
+@supports (-webkit-backdrop-filter: blur()) or (backdrop-filter: blur()) {
+  :root {
+    --header-background-color: #bbb7;
+  }
+}
+
 @media(prefers-color-scheme:dark) {
+
   :root {
     --background-color: #111;
-    --header-background-color: #4447;
+    --header-background-color: #444;
     --link-color: #bbf;
     --link-color-hover: #44f;
     --text-color: #eee;
+  }
+
+  @supports (-webkit-backdrop-filter: blur()) or (backdrop-filter: blur()) {
+    :root {
+      --header-background-color: #4447;
+    }
   }
 }
 
@@ -42,7 +55,6 @@ header {
   background-color: var(--header-background-color);
   height: 80px;
   left: 0;
-  position: -webkit-sticky;
   position: fixed;
   right: 0;
   top: 0;
